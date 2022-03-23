@@ -1,0 +1,72 @@
+@use 'src/app/constant/colors';
+
+button {
+  border: 1px solid;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 5px;
+  background: none;
+  transition: all .5s;
+  cursor: pointer;
+  font-weight: 300;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &.primary {
+    border-color: colors.$primaryRed;
+    background: colors.$primaryRed;
+    color: colors.$white;
+
+    &:hover {
+      background: transparent;
+      color: colors.$blue-1;
+    }
+  }
+
+  &.primary-outline {
+    border-color: colors.$primaryRed;
+    background: transparent;
+    color: colors.$blue-1;
+
+    &:hover {
+      background: colors.$primaryRed;
+      color: colors.$white;
+    }
+  }
+
+  &.secondary {
+    border-color: colors.$primaryBlue;
+    background: colors.$primaryBlue;
+    color: colors.$white;
+
+    &:hover {
+      background: transparent;
+      color: colors.$blue-1;
+    }
+  }
+
+  &.secondary-outline {
+    border-color: colors.$primaryBlue;
+    background: transparent;
+    color: colors.$blue-1;
+
+    &:hover {
+      background: colors.$primaryBlue;
+      color: colors.$white;
+    }
+  }
+
+  &.text {
+    border-color: transparent;
+    color: colors.$silver-5;
+    background: transparent;
+
+    &:hover {
+      background: colors.$silver-1;
+    }
+  }
+
+}

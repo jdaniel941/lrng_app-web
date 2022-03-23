@@ -1,0 +1,7 @@
+<div class="input-wrapper">
+    <mat-label class="label" *ngIf="label">{{ label }}</mat-label>
+    <input [formControl]="controlAsFormControl" [type]="type ? type : 'text'" [placeholder]="placeholder" />
+    <p class="error" *ngIf="error"></p>
+</div>
+
+

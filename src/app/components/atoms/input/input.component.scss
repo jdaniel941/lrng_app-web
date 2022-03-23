@@ -1,0 +1,15 @@
+@use 'src/app/constant/colors';
+
+.input-wrapper {
+  width: 100%;
+
+  input {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    background: colors.$white;
+    padding: 10px 30px;
+    border: 0;
+    outline: none;
+  }
+}

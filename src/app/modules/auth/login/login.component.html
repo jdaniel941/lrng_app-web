@@ -1,1 +1,13 @@
-<p>login works!</p>
+<div class="login-wrapper">
+    <div class="image-wrapper"><img src="./assets/images/illustrations/main-img.svg" /></div>
+    <div class="form-wrapper">
+        <h2>Login</h2>
+        <div class="form">
+            <form [formGroup]="loginForm">
+                <app-input [control]="loginForm.controls['username']" label="login" placeholder="login"></app-input>
+                <app-input [control]="loginForm.controls['password']" [type]="inputType.PASSWORD" label="password" placeholder="password"></app-input>
+                <app-button (click)="onLoginSubmit()" text="Zaloguj się"></app-button>
+            </form>
+        </div>
+    </div>
+</div>

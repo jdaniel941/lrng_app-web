@@ -5,10 +5,13 @@ import { LoginComponent } from "./login/login.component";
 import { LostPasswordComponent } from "./lost-password/lost-password.component";
 import { AuthRoutingModule } from "./auth-routing.module";
 import { AuthService } from "../../services/auth.service";
+import { AppModule } from "../../app.module";
+import { SharedModule } from "../../components/shared.module";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [RegisterComponent, LoginComponent, LostPasswordComponent],
-  imports: [CommonModule, AuthRoutingModule],
+  imports: [CommonModule, AuthRoutingModule, SharedModule, ReactiveFormsModule],
   providers: [AuthService],
 })
 export class AuthModule {}

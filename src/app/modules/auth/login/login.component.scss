@@ -1,0 +1,19 @@
+@use 'src/app/constant/colors';
+
+.login-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .image-wrapper {
+    width: calc(100% - 300px);
+  }
+
+  .form-wrapper {
+    width: 300px;
+    padding: 50px;
+    background: colors.$white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,0.05);
+  }
+}
