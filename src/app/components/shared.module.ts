@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MainNavComponent } from "./elements/main-nav/main-nav.component";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [InputComponent, ButtonComponent, MainNavComponent],
@@ -14,6 +15,7 @@ import { MainNavComponent } from "./elements/main-nav/main-nav.component";
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatIconModule,
   ],
   exports: [InputComponent, ButtonComponent, MainNavComponent],
 })

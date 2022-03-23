@@ -1,3 +1,4 @@
-<button [className]="buttonStyle">
-    {{ text }}
+<button [className]="buttonStyle" [ngClass]="{'icon-button-right': icon && !iconLeft, 'icon-button-left': icon && iconLeft}">
+    <span>{{ text }}</span>
+    <mat-icon *ngIf="icon">{{ icon }}</mat-icon>
 </button>

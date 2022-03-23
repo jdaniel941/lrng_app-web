@@ -1,13 +1,18 @@
 <div class="login-wrapper">
-    <div class="image-wrapper"><img src="./assets/images/illustrations/main-img.svg" /></div>
-    <div class="form-wrapper">
-        <h2>Login</h2>
-        <div class="form">
-            <form [formGroup]="loginForm">
-                <app-input [control]="loginForm.controls['username']" label="login" placeholder="login"></app-input>
-                <app-input [control]="loginForm.controls['password']" [type]="inputType.PASSWORD" label="password" placeholder="password"></app-input>
-                <app-button (click)="onLoginSubmit()" text="Zaloguj się"></app-button>
-            </form>
+    <div class="image-wrapper"><img src="./assets/images/illustrations/main-img.png" /></div>
+    <div class="form-container">
+        <div class="form-wrapper">
+            <h2><mat-icon>login</mat-icon>Sign in</h2>
+            <div class="description">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </div>
+            <div class="form">
+                <form [formGroup]="loginForm">
+                    <app-input [control]="loginForm.controls['username']" placeholder="login"></app-input>
+                    <app-input [control]="loginForm.controls['password']" [type]="inputType.PASSWORD" placeholder="password"></app-input>
+                    <app-button (click)="onLoginSubmit()" text="Zaloguj się" icon="login"></app-button>
+                    <div class="forgot-password">Forgot password</div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+

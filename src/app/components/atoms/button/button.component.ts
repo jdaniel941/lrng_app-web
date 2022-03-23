@@ -9,6 +9,8 @@ import { ButtonStyle } from "../../../enum/form.enum";
 export class ButtonComponent implements OnInit {
   @Input() text: string = "";
   @Input() buttonStyle: ButtonStyle = ButtonStyle.Primary;
+  @Input() icon: string;
+  @Input() iconLeft = false;
 
   constructor() {}
 

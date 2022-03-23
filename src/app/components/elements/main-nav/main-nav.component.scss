@@ -4,7 +4,7 @@
   width: calc(100vw - 100px);
   max-width: 1600px;
   background: colors.$white;
-  padding:20px 50px;
+  padding:20px 25px;
   box-shadow: 15px 0 70px 0 rgba(0,0,0,0.05);;
   position: relative;
   display: flex;
@@ -13,10 +13,46 @@
   border-radius: 15px;
   margin: 10px 20px;
 
-  .navigation {
-    ul {
-      display: flex;
-      list-style: none;
+
+  .navigation-module {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .logo {
+      margin-left: 24px;
+
+      img {
+        max-height:20px;
+      }
+    }
+
+    .navigation {
+      margin-left: 81px;
+      position: relative;
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          font-size: 16px;
+          font-weight: 300;
+          color: gray;
+          padding: 0 24px;
+          position: relative;
+        }
+      }
+
+      .crazy-flying-element {
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 5px;
+        border-radius: 3px;
+        background: colors.$primaryRed;
+        bottom: -10px;
+      }
     }
   }
 

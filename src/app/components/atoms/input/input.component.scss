@@ -2,14 +2,16 @@
 
 .input-wrapper {
   width: 100%;
+  padding: 5px 0;
 
   input {
     width: 100%;
     border-radius: 10px;
     font-size: 16px;
-    background: colors.$white;
-    padding: 10px 30px;
-    border: 0;
+    background: #ffffff;
+    padding: 20px 35px;
+    border: 1px solid #e4e4e4;
     outline: none;
+    margin: 5px 0;
   }
 }

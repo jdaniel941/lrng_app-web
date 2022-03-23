@@ -8,10 +8,17 @@ import { AuthService } from "../../services/auth.service";
 import { AppModule } from "../../app.module";
 import { SharedModule } from "../../components/shared.module";
 import { ReactiveFormsModule } from "@angular/forms";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [RegisterComponent, LoginComponent, LostPasswordComponent],
-  imports: [CommonModule, AuthRoutingModule, SharedModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    AuthRoutingModule,
+    SharedModule,
+    ReactiveFormsModule,
+    MatIconModule,
+  ],
   providers: [AuthService],
 })
 export class AuthModule {}
